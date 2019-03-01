@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <title>PT. Bulan Dempel Karya</title>
+    <style type="text/css">
+      nav{
+        margin: 0!important; 
+        padding: 0 10px 0 0!important;
+      }
+      .nav .nav-item .nav-link{
+        color: #ffffff!important;
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+      .nav .nav-item{
+        color: #ffffff!important;
+        opacity: 0.7;
+        padding:10px 0 10px 0;
+      }
+      .nav .active{
+        color: #ffffff!important;
+        opacity: 1!important;
+        font-weight: bold;
+      }
+      .nav .nav-item:hover{
+        color: #ffffff!important;
+        opacity: 1;
+        transition: opacity 0.5s;
+      }
+      .primary-color{
+        background-color: #262626;
+      }
+      .bg-grey{
+        background-color: #dddddd;
+      }
+      .bg-white{
+        background-color: #ffffff;
+      }
+      #contOverview{
+        padding: 5% 0 5% 0;
+      }
+      #contClient{
+        padding: 5% 0 5% 0;
+      }
+      .header-primary{
+        color: #262626;
+        font-weight: bold;
+        font-size: 2rem;
+      }
+      #contOverview .liner-orange{
+        background-color: #eb870e;
+        height: 6px;
+        width: 38%;
+        position: absolute;
+        /*border-radius: 15px;*/
+      }
+      #contClient .liner-orange{
+        background-color: #eb870e;
+        height: 6px;
+        width: 10%;
+        position: absolute;
+        margin: auto;
+        right: 0;
+        left: 0;
+      }
+      .left-header{
+        width: 85%;
+        background-size: cover;
+        height: 90px;
+        object-fit: cover;
+      }
+      .right-header{
+        width: 20%;
+        background-size: cover;
+      }
+      .banners{
+        background-color: #ffffff;
+        padding: 1%;
+      }
+        .nav-link::after{
+        display:block!important;
+        content: ''!important;
+        border-bottom: solid 2px #eb870e!important; 
+        transform: scaleX(0)!important;  
+        transition: transform 250ms ease-in-out!important;
+        box-shadow: none!important;
+      }
+
+      .nav-link:hover::after{
+        transform: scaleX(1)!important;
+        box-shadow: none!important;
+      }
+      .nav .active .nav-link:after{
+        transform: scaleX(1)!important;
+        box-shadow: none!important;
+      }
+      .carousel-img{
+        height: 450px;
+        object-fit: cover;
+      }
+      .main-row{
+        top:100%!important;
+        padding: 0!important;
+        left:0!important;
+        right: 0!important;
+        margin: auto!important;
+        position: absolute!important;
+        width: 100%!important;
+        overflow-x: hidden;
+      }
+      .btn-primary{
+        background-color: #eb870e!important;
+        border:none; 
+      }
+      .btn-primary:hover{
+        background-color: #d8790d!important;
+        border:none; 
+      }
+    </style>
+  </head>
+  <body style="background-color: #dddddd;">
+    <div class="first-header">
+      <nav class="navbar justify-content-end primary-color fixed-header">
+          <ul class="nav">
+            <li class="nav-item active" >
+              <a href="#!" class="nav-link">Beranda</a>
+            </li>
+            <li class="nav-item">
+              <a href="#!" class="nav-link">Tentang Kami</a>
+            </li>
+            <li class="nav-item">
+              <a href="#!" class="nav-link">Proyek</a>
+            </li>
+            <li class="nav-item">
+              <a href="#!" class="nav-link">Klien</a>
+            </li>
+            <li class="nav-item">
+              <a href="#!" class="nav-link">Karir</a>
+            </li>
+            <li class="nav-item">
+              <a href="#!" class="nav-link">Hubungi Kami</a>
+            </li>
+          </ul>
+      </nav>
+    </div>
+    <div class="container-fluid">
+      <div class="row banners">
+        <div class="col-lg-12 row">
+          <div class="col-lg-6">
+            <img class="left-header" src="assets/images/left_logo.png"/>
+          </div>
+          <div class="col-lg-6">
+            <img class="right-header float-right" src="assets/images/right_logo.png"/>
+          </div>
+        </div>
+      </div>
+      <div class="row" id="contCarousel">
+        <div class="col-lg-12">
+            <div id="carouselHeader" class="carousel slide" data-ride="carousel" style="width: 100%; position: absolute; margin:auto; left: 0; right: 0;">
+              <ol class="carousel-indicators">
+                <li data-target="#carouselHeader" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselHeader" data-slide-to="1"></li>
+                <li data-target="#carouselHeader" data-slide-to="2"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="assets/images/carousel1.jpg" class="d-block w-100 carousel-img">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>First slide label</h5>
+                    <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="assets/images/carousel1.jpg" class="d-block w-100 carousel-img">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Second slide label</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="assets/images/carousel1.jpg" class="d-block w-100 carousel-img">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Third slide label</h5>
+                    <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                  </div>
+                </div>
+              </div>
+              <a class="carousel-control-prev" href="#carouselHeader" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselHeader" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+        </div>
+      </div>
+      <div class="main-row">
+        <div class="row bg-grey" id="contOverview">
+          <div class="col-lg-8 offset-lg-2">
+            <h6 class="header-primary">Profile Perusahaan</h6>
+            <span class="liner-orange"></span>
+            <br/>
+            <p style="margin-top: 3%; text-align: justify;">
+              <b>PT. BULAN DEMPEL KARYA</b> adalah perusahaan yang bergerak di bidang Kontraktor baik Bangunan Arsitektur maupun Civil Engineering, beralamat di Jl. Bulustalan III A nomor 415 B Semarang, Pendirian perusahaan ini berawal dari keinginan yang sangat kuat dalam ikut berperan serta dalam mensukseskan pembangunan Infrastruktur di Indonesia dimana keahlian kami dalam bidang konstruksi bangunan Gedung, Pelaksana Interior Gedung, Pengadaan dan Instalasi Mekanikal dan Elektrikal. 
+            </p><br/>
+            <button class="btn btn-primary btn-lg float-right">Lihat selengkapnya</button>
+          </div>
+        </div>
+        <div class="row bg-white" id="contClient">
+          <div class="col-lg-8 offset-lg-2">
+              <h6 class="header-primary" align="center">Klien Kami</h6>
+              <span class="liner-orange"></span>
+            <br/>
+            <p style="margin-top: 3%;">
+              Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
+              Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
+              Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
+              Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        $('.carousel').carousel()
+    </script>
+  </body>
+</html>
