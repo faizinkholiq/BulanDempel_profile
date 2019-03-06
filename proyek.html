@@ -1,0 +1,489 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link href="assets/icon/css/all.css" rel="stylesheet">
+    <link rel="icon" href="assets/images/fav_bdk.png">  
+    <title>PT. Bulan Dempel Karya</title>
+    <style type="text/css">
+      nav{
+        margin: 0!important; 
+        padding: 0 10px 0 0!important;
+      }
+      .nav .nav-item .nav-link{
+        color: #ffffff!important;
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+      .nav .nav-item{
+        color: #ffffff!important;
+        opacity: 0.7;
+        padding:10px 0 10px 0;
+      }
+      .nav .active{
+        color: #ffffff!important;
+        opacity: 1!important;
+        font-weight: bold;
+      }
+      .nav .nav-item:hover{
+        color: #ffffff!important;
+        opacity: 1;
+        transition: opacity 0.5s;
+      }
+      .primary-color{
+        background-color: #262626;
+      }
+      .bg-grey{
+        background-color: #dddddd;
+      }
+      .bg-white{
+        background-color: #ffffff;
+      }
+    .bg-black{
+        background-color: #262626;
+      }
+      #contOverview{
+        padding: 5% 0 5% 0;
+      }
+      #contClient{
+        padding: 5% 0 5% 0;
+      }
+      .header-primary{
+        color: #262626;
+        font-weight: bold;
+        font-size: 2rem;
+      }
+      #contOverview .liner-orange{
+        background-color: #eb870e;
+        height: 6px;
+        width: 38%;
+        position: absolute;
+        /*border-radius: 15px;*/
+      }
+      #contProject .liner-orange{
+        background-color: #eb870e;
+        height: 6px;
+        width: 10%;
+        position: absolute;
+        margin: auto;
+        right: 0;
+        left: 0;
+      }
+      .left-header{
+        top:50%;
+        transform: translateY(-50%);
+        width: 50%;
+        background-size: cover;
+        height: 55px;
+        object-fit: cover;
+        position: relative;
+      }
+      .right-header{
+        width: 15%;
+        background-size: cover;
+      }
+      .banners{
+        background-color: #ffffff;
+        padding: 0.5%;
+      }
+       .nav-link::after{
+        display:block!important;
+        content: ''!important;
+        border-bottom: solid 2px #eb870e!important; 
+        transform: scaleX(0)!important;  
+        transition: transform 250ms ease-in-out!important;
+        box-shadow: none!important;
+      }
+
+      .nav-link:hover::after{
+        transform: scaleX(1)!important;
+        box-shadow: none!important;
+      }
+      .nav .active .nav-link:after{
+        transform: scaleX(1)!important;
+        box-shadow: none!important;
+      }
+      .carousel-img{
+        height: 450px;
+        object-fit: cover;
+      }
+      .btn-primary{
+        background-color: #eb870e!important;
+        border:none; 
+      }
+      .btn-primary:hover{
+        background-color: #d8790d!important;
+        border:none; 
+      }
+    .footer-distributed{     
+    background-color: #292c2f;     
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);     
+    box-sizing: border-box;     
+    width: 100%;     
+    text-align: left;     
+    font: bold 16px sans-serif;     
+    padding: 55px 50px;     
+    bottom:0;
+    left:0;
+    right: 0;
+    margin: auto;
+    position: absolute;
+
+    } 
+    .footer-distributed 
+    .footer-left, 
+    .footer-distributed 
+    .footer-center, 
+    .footer-distributed 
+    .footer-right{     
+    display: inline-block;     
+    vertical-align: top; 
+    } /* Footer left */ 
+    .footer-distributed 
+    .footer-left{     
+    width: 40%; 
+    } /* The company logo */ 
+    .footer-distributed h3{     
+    color:  #ffffff;     
+    font: normal 36px 'Cookie', cursive;     
+    margin: 0; 
+    } .footer-distributed h3 span{
+    color:  #d8790d; } 
+    /* Footer links */ .footer-distributed .footer-links{
+    color:  #ffffff;    
+    margin: 20px 0 12px;     
+    padding: 0; } 
+    .footer-distributed .footer-links a{
+    display:inline-block;     
+    line-height: 1.8;     
+    text-decoration: none;     
+    color:  inherit; } 
+    .footer-distributed 
+    .footer-company-name{     
+    color:  #8f9296;     
+    font-size: 14px;     
+    font-weight: normal;     
+    margin: 0; } /* Footer Center */ 
+    .footer-distributed .footer-center{     
+    width: 35%; } 
+    .footer-distributed 
+    .footer-center i{     
+    background-color:  #33383b;
+    color: #ffffff;     font-size: 25px;
+    width: 38px;     
+    height: 38px;     
+    border-radius: 50%;   
+    text-align: center;   
+    line-height: 42px;    
+    margin: 10px 15px;    
+    vertical-align: middle; } 
+    .footer-distributed 
+    .footer-center i
+    .fa-envelope{    
+    font-size: 17px;  
+    line-height: 38px; } 
+    .footer-distributed 
+    .footer-center p{  
+    display: inline-block;   
+    color: #ffffff;    
+    vertical-align: middle;  
+    margin:0; } 
+    .footer-distributed 
+    .footer-center p span{ 
+    display:block;   
+    font-weight: normal;  
+    font-size:14px;   
+    line-height:2; } 
+    .footer-distributed 
+    .footer-center p a{   
+    color:  #d8790d;   
+    text-decoration: none;; } /* Footer Right */ 
+    .footer-distributed .footer-right{   
+    width: 20%; } 
+    .footer-distributed 
+    .footer-company-about{    
+    line-height: 20px;     
+    color:  #92999f;    
+    font-size: 13px;   
+    font-weight: normal;   
+    margin: 0; } 
+    .footer-distributed
+    .footer-company-about span{
+    display: block;  
+    color:  #ffffff;   
+    font-size: 14px;    
+    font-weight: bold;    
+    margin-bottom: 20px; }
+    .footer-distributed 
+    .footer-icons{    
+    margin-top: 25px; }
+    .footer-distributed 
+    .footer-icons a{   
+    display: inline-block; 
+    width: 35px;    
+    height: 35px;    
+    cursor: pointer;   
+    background-color:  #33383b;  
+    border-radius: 2px;   
+    font-size: 20px;    
+    color: #ffffff;    
+    text-align: center;  
+    line-height: 35px;   
+    margin-right: 3px;  
+    margin-bottom: 5px; }
+    @media (max-width: 880px) { 
+    .footer-distributed{     
+    font: bold 14px sans-serif;  
+    }     .footer-distributed
+    .footer-left,   
+    .footer-distributed 
+    .footer-center,  
+    .footer-distributed 
+    .footer-right{      
+    display: block;     
+    width: 100%;      
+    margin-bottom: 40px;  
+    text-align: center;     } 
+    .footer-distributed 
+    .footer-center i{   
+      margin-left: 0;     } }
+    
+ #nav-tab .nav-item{
+  color: black!important;
+  border:none!important;
+ } 
+
+ #nav-tab .nav-item::after{
+        display:block!important;
+        content: ''!important;
+        padding-top: 2%;
+        border-bottom: solid 3px #eb870e!important; 
+        transform: scaleX(0)!important;  
+        transition: transform 250ms ease-in-out!important;
+        box-shadow: none!important;
+      }
+
+    #nav-tab .nav-item:hover::after{
+        transform: scaleX(1)!important;
+        box-shadow: none!important;
+      }
+      #nav-tab .active:after{
+        transform: scaleX(1)!important;
+        box-shadow: none!important;
+      }
+      .imgProyek{
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        background-size: cover;
+      }
+      #nav-tab .active{
+        color:#eb870e!important;
+      }
+      .fix-header{
+        width: 100%;
+        position: fixed; 
+        z-index: 2; 
+        background-color: #ffffff; 
+        padding: 1% 1% 1.5% 1%; 
+        box-shadow: 0 5px 15px #bbbbbb;
+        /*top:-101%;*/
+        display: none;
+      }
+      .fix-header .navbar .nav-link{
+        color:black!important;
+      }
+    </style>
+ 
+  </head>
+  <body style="background-color: #dddddd;">
+    <div class="fix-header">
+      <nav class="navbar">
+          <img class="float-left" src="assets/images/left_logo.png" style="width: 25%; background-size: cover; height: 60px; object-fit: cover;" />
+          <ul class="nav float-right">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link">Beranda</a>
+            </li>
+            <li class="nav-item">
+              <a href="about.html" class="nav-link">Tentang Kami</a>
+            </li>
+            <li class="nav-item active">
+              <a href="#!" class="nav-link">Proyek</a>
+            </li>
+            <li class="nav-item">
+              <a href="klien.html" class="nav-link">Klien</a>
+            </li>
+            <li class="nav-item">
+              <a href="mitra.html" class="nav-link">Mitra Bisnis</a>
+            </li>
+            <li class="nav-item">
+              <a href="kontak.html" class="nav-link">Hubungi Kami</a>
+            </li>
+          </ul>
+      </nav>
+    </div>
+    <div class="first-header">
+      <nav class="navbar justify-content-end primary-color">
+        <ul class="nav">
+          <li class="nav-item">
+              <a href="index.html" class="nav-link">Beranda</a>
+            </li>
+            <li class="nav-item">
+              <a href="about.html" class="nav-link">Tentang Kami</a>
+            </li>
+            <li class="nav-item active">
+              <a href="#!" class="nav-link">Proyek</a>
+            </li>
+            <li class="nav-item">
+              <a href="klien.html" class="nav-link">Klien</a>
+            </li>
+            <li class="nav-item">
+              <a href="mitra.html" class="nav-link">Mitra Bisnis</a>
+            </li>
+            <li class="nav-item">
+              <a href="kontak.html" class="nav-link">Hubungi Kami</a>
+            </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="container-fluid">
+      <div class="row banners" style="box-shadow: 1px 4px 10px #cccccc;">
+        <div class="col-lg-12 row">
+          <div class="col-lg-6">
+            <img class="left-header" src="assets/images/left_logo.png"/>
+          </div>
+          <div class="col-lg-6">
+            <img class="right-header float-right" src="assets/images/right_logo.png"/>
+          </div>
+        </div>
+      </div>
+      <div class="row bg-white" id="contProject">
+        <div class="row"> 
+          <div class="col-lg-12 bg-white" style="padding: 5% 5% 55% 5%; height: 100%; width: 100%;  position: absolute; left: 0; right: 0; top:20%; margin: auto; z-index: -1;">
+            <h6 class="header-primary" align="center">Proyek Kami</h6>
+            <span class="liner-orange"></span>
+            <nav style="margin-top: 5%!important;">
+              <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+                <a class="nav-item nav-link active" id="nav-gedung-tab" data-toggle="tab" href="#nav-gedung" role="tab" aria-controls="nav-all" aria-selected="true">BANGUNAN GEDUNG</a>
+                <a class="nav-item nav-link" id="nav-interior-tab" data-toggle="tab" href="#nav-interior" role="tab" aria-controls="nav-arsitektur" aria-selected="false">INTERIOR DESIGN</a>
+                <a class="nav-item nav-link" id="nav-sipil-tab" data-toggle="tab" href="#nav-sipil" role="tab" aria-controls="nav-civil" aria-selected="false">BANGUNAN SIPIL</a>
+                <a class="nav-item nav-link" id="nav-elek-tab" data-toggle="tab" href="#nav-elek" role="tab" aria-controls="nav-eng" aria-selected="false">MEKANIKAL ELEKTRIKA</a>
+              </div>
+            </nav>
+            <div class="tab-content" id="nav-tabContent">
+              <div class="tab-pane fade show active" id="nav-gedung" role="tabpanel" aria-labelledby="nav-all-tab">
+                <div class="row">
+                  <div class="col-lg-3">
+                    <img data-src="assets/images/bangunan/bang1.jpeg" class="imgProyek lazy" />
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade show" id="nav-interior" role="tabpanel" aria-labelledby="nav-arsitektur-tab">
+                <div class="row">
+                  <div class="col-lg-3">
+                    <img data-src="assets/images/interior/inter1.jpeg" class="imgProyek lazy" />
+                  </div>
+                  <div class="col-lg-3">
+                    <img data-src="assets/images/interior/inter2.jpeg" class="imgProyek lazy" />
+                  </div>
+                  <div class="col-lg-3">
+                    <img data-src="assets/images/interior/inter3.jpeg" class="imgProyek lazy" />
+                  </div>
+                  <div class="col-lg-3">
+                    <img data-src="assets/images/interior/inter4.jpeg" class="imgProyek lazy" />
+                  </div>
+                  <div class="col-lg-12"><br/></div>
+                  <div class="col-lg-3">
+                    <img data-src="assets/images/interior/inter5.jpeg" class="imgProyek lazy" />
+                  </div>
+                  <div class="col-lg-3">
+                    <img data-src="assets/images/interior/inter6.jpeg" class="imgProyek lazy" />
+                  </div>
+                  <div class="col-lg-3">
+                    <img data-src="assets/images/interior/inter7.jpeg" class="imgProyek lazy" />
+                  </div>
+                  <div class="col-lg-3">
+                    <img data-src="assets/images/interior/inter8.jpeg" class="imgProyek lazy" />
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade show" id="nav-sipil" role="tabpanel" aria-labelledby="nav-civil-tab">
+                <div style="margin-top:10%;">
+                  <center><h5>Belum ada gambar.</h5></center>
+                </div>
+              </div>
+              <div class="tab-pane fade show" id="nav-elek" role="tabpanel" aria-labelledby="nav-eng-tab">
+                <div style="margin-top:10%;">
+                  <center><h5>Belum ada gambar.</h5></center>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>  
+    </div>
+
+      <footer style="bottom:-80%; width: 100%; background-color: #262626; position: absolute;" class="footer-distributed">            
+        <div class="footer-left">                 
+          <h3>Bulan Dempel<span>Karya</span></h3>                 
+            <p class="footer-links">                                       ·                     
+              <a href="#">Arsitektur</a>                     ·                     
+              <a href="#">Civil</a>                     ·                     
+              <a href="#">Enginering</a>                 
+            </p>                 
+        </div>             
+        <div class="footer-center">                 
+          <div>                     
+            <i class="fa fa-map-marker"></i>                     
+            <p><span>Bulus Talan IIIA No.415</span> Semarang, Indonesia</p>                 
+          </div>                 
+          <div>                    
+            <i class="fa fa-phone"></i>                     
+            <p>024-86400172</p>                 
+          </div>                 
+          <div>                     
+            <i class="fa fa-envelope"></i>                     
+            <p><a href="mailto:support@company.com">bulandempelkarya16@gmail.com</a></p>                 
+          </div>             
+        </div>            
+        <div class="footer-right">                 
+          <p class="footer-company-about">                     
+          <span>Tentang Perusahaan</span>                     
+          perusahaan yang bergerak di bidang Kontraktor baik Bangunan Arsitektur maupun Civil Engineering                 
+          </p>                 
+          <div class="footer-icons">                     
+            <a href="#"><i class="fa fa-facebook"></i></a>                     
+            <a href="#"><i class="fa fa-twitter"></i></a>                    
+            <a href="#"><i class="fa fa-linkedin"></i></a>                   
+            <a href="#"><i class="fa fa-github"></i></a>              
+          </div>             
+        </div><br/>
+        <div class="row">
+          <div class="col-lg-12">
+            <p class="footer-company-name">Company Name &copy; 2019</p>
+          </div>
+        </div>      
+      </footer>
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/plugin/jquery_lazy/jquery.lazy.min.js"></script>
+    <script type="text/javascript">
+        $(function() {
+            $('.lazy').lazy();
+        });
+        $(window).scroll(function(){
+          if($(window).scrollTop()>100){
+            $('.fix-header').fadeIn();
+            // $('.fix-header').animate({'top':'0'},'200');
+          }else{
+            // $('.fix-header').animate({'top':'-101%'},'200');
+            $('.fix-header').fadeOut();
+          }
+        });
+    </script>
+  </body>
+  
+</html>
