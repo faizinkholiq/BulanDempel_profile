@@ -71,8 +71,6 @@
         transform: translateY(-50%);
         width: 50%;
         background-size: cover;
-        height: 55px;
-        object-fit: cover;
         position: relative;
       }
       .right-header{
@@ -305,9 +303,8 @@
         position: fixed; 
         z-index: 2; 
         background-color: #ffffff; 
-        padding: 1% 1% 1.5% 1%; 
+        padding: 0.5% 1% 1% 1%; 
         box-shadow: 0 5px 15px #bbbbbb;
-        /*top:-101%;*/
         display: none;
       }
       .fix-header .navbar .nav-link{
@@ -337,16 +334,16 @@
   <body style="background-color: #dddddd;">
     <div class="fix-header">
       <nav class="navbar">
-          <img class="float-left" src="assets/images/left_logo.png" style="width: 25%; background-size: cover; height: 60px; object-fit: cover;" />
-          <ul class="nav float-right">
+          <img class="float-left" src="assets/images/left_logo.png" style="width: 25%; background-size: cover;" />
+          <ul class="nav float-right d-none d-lg-flex">
             <li class="nav-item">
               <a href="index.html" class="nav-link">Beranda</a>
             </li>
             <li class="nav-item">
-              <a href="about.html" class="nav-link">Tentang Kami</a>
+              <a href="about.html" class="nav-link">Profil Perusahaan</a>
             </li>
             <li class="nav-item">
-              <a href="proyek.html" class="nav-link">Proyek</a>
+              <a href="proyek.html" class="nav-link">Referensi Proyek</a>
             </li>
             <li class="nav-item">
               <a href="klien.html" class="nav-link">Klien</a>
@@ -367,10 +364,10 @@
               <a href="index.html" class="nav-link">Beranda</a>
             </li>
             <li class="nav-item">
-              <a href="about.html" class="nav-link">Tentang Kami</a>
+              <a href="about.html" class="nav-link">Profil Perusahaan</a>
             </li>
             <li class="nav-item">
-              <a href="proyek.html" class="nav-link">Proyek</a>
+              <a href="proyek.html" class="nav-link">Referensi Proyek</a>
             </li>
             <li class="nav-item">
               <a href="klien.html" class="nav-link">Klien</a>
@@ -407,19 +404,31 @@
                   <hr/>
                   <div class="card-body" style="width: 100%; padding: 3% 3% 5% 3%;">
                       <div class="row">
-                        <div class="card col-lg-4" style="max-width:31%!important; padding: 3%; margin: 1%; background-color: #fff; box-shadow: 1px 3px 5px #aaaaaa; border-left: 5px solid #eb870e;">
-                          <div class="card-body" align="center">
+                        <div class="card col-lg-4" style="max-width:31%!important; padding: 1%; margin: 1%; background-color: #fff; box-shadow: 1px 3px 5px #aaaaaa; border-left: 5px solid #eb870e;">
+                          <div class="card-header" align="center" style="background-color: #fff;">
                             <h5 style="font-weight: bold;">CV. JODITA KARYA</h5>
                           </div>
-                        </div>
-                        <div class="card col-lg-4" style="max-width:31%!important; padding: 3%; margin: 1%; background-color: #fff; box-shadow: 1px 3px 5px #aaaaaa; border-left: 5px solid #eb870e;">
-                          <div class="card-body" align="center">
-                            <h5 style="font-weight: bold;">CV. BULAN SEKAWAN</h5>
+                          <div class="card-footer" style="background-color: #fff;">
+                            <span style="font-size: 2.4vh;">Jl. Bulustalan IV /424 Semarang</span><br/>
+                            <span>Telp.(024) 3552589</span>
                           </div>
                         </div>
-                        <div class="card col-lg-4" style="max-width:31%!important; padding: 3%; margin: 1%; background-color: #fff; box-shadow: 1px 3px 5px #aaaaaa; border-left: 5px solid #eb870e;">
-                          <div class="card-body" align="center">
+                        <div class="card col-lg-4" style="max-width:31%!important; padding: 1%; margin: 1%; background-color: #fff; box-shadow: 1px 3px 5px #aaaaaa; border-left: 5px solid #eb870e;">
+                          <div class="card-header" align="center" style="background-color: #fff;">
+                            <h5 style="font-weight: bold;">CV. BULAN SEKAWAN</h5>
+                          </div>
+                          <div class="card-footer" style="background-color: #fff;">
+                            <span style="font-size: 2.4vh;">Jl. Bulustalan III A 415 B Semarang</span><br/>
+                            <span>Telp. (024) 86400172</span>
+                          </div>
+                        </div>
+                        <div class="card col-lg-4" style="max-width:31%!important; padding: 1%; margin: 1%; background-color: #fff; box-shadow: 1px 3px 5px #aaaaaa; border-left: 5px solid #eb870e;">
+                          <div class="card-header" align="center" style="background-color: #fff;">
                             <h5 style="font-weight: bold;">CV. DN MITRA SEJATI</h5>
+                          </div>
+                          <div class="card-footer" style="background-color: #fff;">
+                            <span style="font-size: 2.4vh;">Jl. Bangunharjo No. II/30 Semarang</span><br/>
+                            <span>Telp. 0816 - 4246 - 046</span>
                           </div>
                         </div>
                       </div>
@@ -441,7 +450,7 @@
         <div class="footer-center">                 
           <div>                     
             <i class="fa fa-map-marker"></i>                     
-            <p><span>Bulus Talan IIIA No.415</span> Semarang, Indonesia</p>                 
+            <p><span>Jl. Bulustalan III A nomor 415 B</span> Semarang, Indonesia</p>                 
           </div>                 
           <div>                    
             <i class="fa fa-phone"></i>                     

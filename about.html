@@ -71,8 +71,6 @@
         transform: translateY(-50%);
         width: 50%;
         background-size: cover;
-        height: 55px;
-        object-fit: cover;
         position: relative;
       }
       .right-header{
@@ -254,24 +252,7 @@
     .footer-center i{   
       margin-left: 0;     } }
     
-.div_kontainer_klien{margin:35px auto 0 auto;display:inline-block;clear:both}
-.a_klien{margin:0 0 35px 0;display:inline-block}.a_klien:link,
-.a_klien:visited{color:transparent;text-decoration:none}
-.div_klien{
-  background-position:center center;
-  background-size:contain;
-  background-repeat:no-repeat;
-  position:relative;
-  display:inline-block;
-  margin:0;
-  padding:0;
-  border-collapse:collapse;
-  height:300px;
-  width:300px
-}
- .dk5{
-  float:left
- }
+
       #contContract .card{
         border-radius: 0!important;
         background-color: #ffffff;
@@ -300,14 +281,13 @@
         font-size: 1.8rem!important;
         font-weight: bold;
       }
-      .fix-header{
+     .fix-header{
         width: 100%;
         position: fixed; 
         z-index: 2; 
         background-color: #ffffff; 
-        padding: 1% 1% 1.5% 1%; 
+        padding: 0.5% 1% 1% 1%; 
         box-shadow: 0 5px 15px #bbbbbb;
-        /*top:-101%;*/
         display: none;
       }
       .fix-header .navbar .nav-link{
@@ -332,21 +312,27 @@
         font-weight: bold;
         color: black;
       }
+      .ortex{
+        color:#eb870e!important;
+      }
+      .table-bordered tr td,th{
+        border:1px solid black!important;
+      }
     </style>
   </head>
   <body style="background-color: #dddddd;">
     <div class="fix-header">
       <nav class="navbar">
-          <img class="float-left" src="assets/images/left_logo.png" style="width: 25%; background-size: cover; height: 60px; object-fit: cover;" />
-          <ul class="nav float-right">
+          <img class="float-left" src="assets/images/left_logo.png" style="width: 25%; background-size: cover;" />
+          <ul class="nav float-right d-none d-lg-flex">
             <li class="nav-item">
               <a href="index.html" class="nav-link">Beranda</a>
             </li>
             <li class="nav-item active">
-              <a href="#!" class="nav-link">Tentang Kami</a>
+              <a href="#!" class="nav-link">Profil Perusahaan</a>
             </li>
             <li class="nav-item">
-              <a href="proyek.html" class="nav-link">Proyek</a>
+              <a href="proyek.html" class="nav-link">Referensi Proyek</a>
             </li>
             <li class="nav-item">
               <a href="klien.html" class="nav-link">Klien</a>
@@ -367,10 +353,10 @@
               <a href="index.html" class="nav-link">Beranda</a>
             </li>
             <li class="nav-item active">
-              <a href="#!" class="nav-link">Tentang Kami</a>
+              <a href="#!" class="nav-link">Profil Perusahaan</a>
             </li>
             <li class="nav-item">
-              <a href="proyek.html" class="nav-link">Proyek</a>
+              <a href="proyek.html" class="nav-link">Referensi Proyek</a>
             </li>
             <li class="nav-item">
               <a href="klien.html" class="nav-link">Klien</a>
@@ -467,11 +453,12 @@
                   </div>
                   <div class="tab-pane fade" id="strukturProfile">
                     <div class="card-body headKlien">
-                      <h6 class="header-primary" align="center">Struktur Organisasi</h6>
+                      <h6 style="font-size: 4vh;" class="header-primary" align="center">Struktur Organisasi Perusahaan<br><span>PT. BULAN DEMPEL KARYA SEMARANG</span></h6>
                       <span class="liner-orange"></span>
                     </div>
                     <hr/>
-                    <div class="card-body" style="width: 100%; margin-top: -2.5%;">
+                    <div class="card-body" style="width: 100%; margin-top: -2.5%; height: 90vh; overflow-x: auto;">
+                      <img src="assets/images/struktur.png" style="width: 100%; background-size: cover;">
                     </div>
                   </div>
                   <div class="tab-pane fade" id="pekerjaanProfile">
@@ -480,7 +467,93 @@
                       <span class="liner-orange"></span>
                     </div>
                     <hr/>
-                    <div class="card-body" style="width: 100%; margin-top: -2.5%;">
+                    <div class="card-body" style="width: 100%; margin-top: -2.5%; height: 90vh; overflow-x: auto;">
+                      <table class="table table-bordered">
+                        <thead>
+                          <tr>
+                            <th colspan="2">BIDANG PEKERJAAN</th>
+                            <th>KODE SUB KUALIFIKASI</th>
+                            <th>SUB KUALIFIKASI</th>
+                            <th>KUALIFIKASI</th>
+                          </tr>
+                        </thead>
+                        <thead>
+                          <tr>
+                            <td colspan="5" style="background-color: #eeeeee;"><b>a. BANGUNAN GEDUNG</b></td>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>1.</td>
+                            <td>JASA PELAKSANA UNTUK KONSTRUKSI BANGUNAN HUNIAN TUNGGAL DAN KOPPEL</td>
+                            <td class="ortex" style="background-color: #eeeeee;" align="center"><b>BG001</b></td>
+                            <td align="center">M 1</td>
+                            <td class="ortex" rowspan="5" align="center" style="background-color: #eeeeee;"><div style="transform: rotate(-90deg); margin-top: 100%;"><b>USAHA NON KECIL</b></div></td>
+                          </tr>
+                          <tr>
+                            <td>2.</td>
+                            <td>JASA PELAKSANA UNTUK KONSTRUKSI BANGUNAN KOMERSIAL)</td>
+                            <td class="ortex" style="background-color: #eeeeee;" align="center"><b>BG004</b></td>
+                            <td align="center">M 1</td>
+                          </tr>
+                          <tr>
+                            <td>3.</td>
+                            <td>JASA PELAKSANA UNTUK KONSTRUKSI BANGUNAN PENDIDIKAN</td>
+                            <td class="ortex" style="background-color: #eeeeee;" align="center"><b>BG007</b></td>
+                            <td align="center">M 1</td>
+                          </tr>
+                          <tr>
+                            <td>4.</td>
+                            <td>JASA PELAKSANA UNTUK KONSTRUKSI BANGUNAN KESEHATAN</td>
+                            <td class="ortex" style="background-color: #eeeeee;" align="center"><b>BG008</b></td>
+                            <td align="center">M 1</td>
+                          </tr>
+                          <tr>
+                            <td>5.</td>
+                            <td>JASA PELAKSANA UNTUK KONSTRUKSI BANGUNAN GEDUNG LAINNYA</td>
+                            <td class="ortex" style="background-color: #eeeeee;" align="center"><b>BG009</b></td>
+                            <td align="center">M 1</td>
+                          </tr>
+                        </tbody>
+                        <thead>
+                          <tr>
+                            <td colspan="5" style="background-color: #eeeeee;"><b>a. BANGUNAN GEDUNG</b></td>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>1.</td>
+                            <td>JASA PELAKSANA UNTUK KONSTRUKSI SALURAN AIR, PELABUHAN, DAM, DAN PRASARANA SUMBER DAYA AIR LAINNYA</td>
+                            <td class="ortex" align="center" style="background-color: #eeeeee;"><b>SI001</b></td>
+                            <td align="center">M 1</td>
+                            <td class="ortex" style="background-color: #eeeeee;" rowspan="5" align="center"><div style="transform: rotate(-90deg); margin-top: 100%;"><b>USAHA NON KECIL</b></div></td>
+                          </tr>
+                          <tr>
+                            <td>2.</td>
+                            <td>JASA PELAKSANA KONSTRUKSI INSTALASI PENGOLAHAN AIR MINUM DAN AIR LIMBAH SERTA BANGUNAN PENGOLAHAN SAMPAH</td>
+                            <td class="ortex" align="center" style="background-color: #eeeeee;"><b>SI002</b></td>
+                            <td align="center">M 1</td>
+                          </tr>
+                          <tr>
+                            <td>3.</td>
+                            <td>JASA PELAKSANA UNTUK KONSTRUKSI JALAN RAYA (KEC. JALAN LAYANG), JALAN, REL KERETA API, DAN LANDAS PACU BANDARA</td>
+                            <td class="ortex" align="center" style="background-color: #eeeeee;"><b>SI003</b></td>
+                            <td align="center">M 1</td>
+                          </tr>
+                          <tr>
+                            <td>4.</td>
+                            <td>JASA PELAKSANA KONSTRUKSI PEK. JEMBATAN, JALAN LAYANG, TEROWONGAN DAN SUBWAYS</td>
+                            <td class="ortex" align="center" style="background-color: #eeeeee;"><b>SI004</b></td>
+                            <td align="center">M 1</td>
+                          </tr>
+                          <tr>
+                            <td>5.</td>
+                            <td>JASA PELAKSANA KONSTRUKSI BANGUNAN FASILITAS OLAH RAGA INDOOR DAN FASILITAS REKREASI</td>
+                            <td class="ortex" align="center" style="background-color: #eeeeee;"><b>SI012</b></td>
+                            <td align="center">M 1</td>
+                          </tr>
+                        </tbody>
+                      </table>
                     </div>
                   </div>
                 </div>
@@ -501,7 +574,7 @@
         <div class="footer-center">                 
           <div>                     
             <i class="fa fa-map-marker"></i>                     
-            <p><span>Bulus Talan IIIA No.415</span> Semarang, Indonesia</p>                 
+            <p><span>Jl. Bulustalan III A nomor 415 B</span> Semarang, Indonesia</p>                 
           </div>                 
           <div>                    
             <i class="fa fa-phone"></i>                     

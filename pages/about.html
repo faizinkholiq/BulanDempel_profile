@@ -1,0 +1,622 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link href="assets/icon/css/all.css" rel="stylesheet">
+    <link href="assets/icon/css/fontawesome.min.css" rel="stylesheet">
+    <link rel="icon" href="assets/images/fav_bdk.png">  
+    <title>PT. Bulan Dempel Karya</title>
+    <style type="text/css">
+      nav{
+        margin: 0!important; 
+        padding: 0 10px 0 0!important;
+      }
+      .nav .nav-item .nav-link{
+        color: #ffffff!important;
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+      .nav .nav-item{
+        color: #ffffff!important;
+        opacity: 0.7;
+        padding:10px 0 10px 0;
+      }
+      .nav .active{
+        color: #ffffff!important;
+        opacity: 1!important;
+        font-weight: bold;
+      }
+      .nav .nav-item:hover{
+        color: #ffffff!important;
+        opacity: 1;
+        transition: opacity 0.5s;
+      }
+      .primary-color{
+        background-color: #262626;
+      }
+      .bg-grey{
+        background-color: #dddddd;
+      }
+      .bg-white{
+        background-color: #ffffff;
+      }
+    .bg-black{
+        background-color: #262626;
+      }
+      #contOverview{
+        padding: 5% 0 5% 0;
+      }
+      #contClient{
+        padding: 5% 0 5% 0;
+      }
+      .header-primary{
+        color: #262626;
+        font-weight: bold;
+        font-size: 2rem;
+      }
+      
+      .headKlien .liner-orange{
+        background-color: #eb870e;
+        height: 6px;
+        width: 10%;
+        position: absolute;
+        margin: auto;
+        right: 0;
+        left: 0;
+      }
+      .left-header{
+        top:50%;
+        transform: translateY(-50%);
+        width: 50%;
+        background-size: cover;
+        position: relative;
+      }
+      .right-header{
+        width: 15%;
+        background-size: cover;
+      }
+      .banners{
+        background-color: #ffffff;
+        padding: 0.5%;
+      }
+        .nav-link::after{
+        display:block!important;
+        content: ''!important;
+        border-bottom: solid 2px #eb870e!important; 
+        transform: scaleX(0)!important;  
+        transition: transform 250ms ease-in-out!important;
+        box-shadow: none!important;
+      }
+
+      .nav-link:hover::after{
+        transform: scaleX(1)!important;
+        box-shadow: none!important;
+      }
+      .nav .active .nav-link:after{
+        transform: scaleX(1)!important;
+        box-shadow: none!important;
+      }
+      .carousel-img{
+        height: 500px;
+        object-fit: cover;
+      }
+      .main-row{
+        top:100%!important;
+        padding: 0!important;
+        left:0!important;
+        right: 0!important;
+        margin: auto!important;
+        position: absolute!important;
+        width: 100%!important;
+        overflow-x: hidden;
+      }
+      .btn-primary{
+        background-color: #eb870e!important;
+        border:none; 
+      }
+      .btn-primary:hover{
+        background-color: #d8790d!important;
+        border:none; 
+      }
+    .footer-distributed{     
+    background-color: #292c2f;     
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);     
+    box-sizing: border-box;     
+    width: 100%;     
+    text-align: left;     
+    font: bold 16px sans-serif;     
+    padding: 55px 50px;     
+    bottom:0;
+    left:0;
+    right: 0;
+    position: absolute;
+
+    } 
+    .footer-distributed 
+    .footer-left, 
+    .footer-distributed 
+    .footer-center, 
+    .footer-distributed 
+    .footer-right{     
+    display: inline-block;     
+    vertical-align: top; 
+    } /* Footer left */ 
+    .footer-distributed 
+    .footer-left{     
+    width: 40%; 
+    } /* The company logo */ 
+    .footer-distributed h3{     
+    color:  #ffffff;     
+    font: normal 36px 'Cookie', cursive;     
+    margin: 0; 
+    } .footer-distributed h3 span{
+    color:  #d8790d; } 
+    /* Footer links */ .footer-distributed .footer-links{
+    color:  #ffffff;    
+    margin: 20px 0 12px;     
+    padding: 0; } 
+    .footer-distributed .footer-links a{
+    display:inline-block;     
+    line-height: 1.8;     
+    text-decoration: none;     
+    color:  inherit; } 
+    .footer-distributed 
+    .footer-company-name{     
+    color:  #8f9296;     
+    font-size: 14px;     
+    font-weight: normal;     
+    margin: 0; } /* Footer Center */ 
+    .footer-distributed .footer-center{     
+    width: 35%; } 
+    .footer-distributed 
+    .footer-center i{     
+    background-color:  #33383b;
+    color: #ffffff;     font-size: 25px;
+    width: 38px;     
+    height: 38px;     
+    border-radius: 50%;   
+    text-align: center;   
+    line-height: 42px;    
+    margin: 10px 15px;    
+    vertical-align: middle; } 
+    .footer-distributed 
+    .footer-center i
+    .fa-envelope{    
+    font-size: 17px;  
+    line-height: 38px; } 
+    .footer-distributed 
+    .footer-center p{  
+    display: inline-block;   
+    color: #ffffff;    
+    vertical-align: middle;  
+    margin:0; } 
+    .footer-distributed 
+    .footer-center p span{ 
+    display:block;   
+    font-weight: normal;  
+    font-size:14px;   
+    line-height:2; } 
+    .footer-distributed 
+    .footer-center p a{   
+    color:  #d8790d;   
+    text-decoration: none;; } /* Footer Right */ 
+    .footer-distributed .footer-right{   
+    width: 20%; } 
+    .footer-distributed 
+    .footer-company-about{    
+    line-height: 20px;     
+    color:  #92999f;    
+    font-size: 13px;   
+    font-weight: normal;   
+    margin: 0; } 
+    .footer-distributed
+    .footer-company-about span{
+    display: block;  
+    color:  #ffffff;   
+    font-size: 14px;    
+    font-weight: bold;    
+    margin-bottom: 20px; }
+    .footer-distributed 
+    .footer-icons{    
+    margin-top: 25px; }
+    .footer-distributed 
+    .footer-icons a{   
+    display: inline-block; 
+    width: 35px;    
+    height: 35px;    
+    cursor: pointer;   
+    background-color:  #33383b;  
+    border-radius: 2px;   
+    font-size: 20px;    
+    color: #ffffff;    
+    text-align: center;  
+    line-height: 35px;   
+    margin-right: 3px;  
+    margin-bottom: 5px; }
+    @media (max-width: 880px) { 
+    .footer-distributed{     
+    font: bold 14px sans-serif;  
+    }     .footer-distributed
+    .footer-left,   
+    .footer-distributed 
+    .footer-center,  
+    .footer-distributed 
+    .footer-right{      
+    display: block;     
+    width: 100%;      
+    margin-bottom: 40px;  
+    text-align: center;     } 
+    .footer-distributed 
+    .footer-center i{   
+      margin-left: 0;     } }
+    
+
+      #contContract .card{
+        border-radius: 0!important;
+        background-color: #ffffff;
+        border: 1px solid #eeeeee;
+        cursor: pointer;
+      }
+      #contContract .card:hover{
+        border-radius: 0!important;
+        border: 2px solid #eb870e;
+        background-color: #eeeeee;
+        transition: background-color 0.5s;
+        transition: border 0.5s;
+      }
+      .carousel-indicators li{
+        width: 10px; height: 10px; 
+        border-radius: 50%;
+        margin-bottom: 1%; 
+      }
+      .carousel-caption{
+        background-color: rgba(0,0,0,0.7); 
+        width: 100%; left: 0; 
+        padding: 3% 0 5% 0;
+        bottom: 0;
+      }
+      .carousel-caption h5{
+        font-size: 1.8rem!important;
+        font-weight: bold;
+      }
+     .fix-header{
+        width: 100%;
+        position: fixed; 
+        z-index: 2; 
+        background-color: #ffffff; 
+        padding: 0.5% 1% 1% 1%; 
+        box-shadow: 0 5px 15px #bbbbbb;
+        display: none;
+      }
+      .fix-header .navbar .nav-link{
+        color:black!important;
+      }
+      #list-tab .active{
+        color: #ffffff;
+        font-weight: bold;
+        background-color: #eb870e!important;
+        border:1px solid #eb870e;
+      }
+      #list-tab .active:hover{
+        color: #ffffff;
+        font-weight: bold;
+        cursor: default;
+      }
+      #list-tab a:hover{
+        color: #eb870e;
+        transition: color 0.5s;
+      }
+      #list-tab a{
+        font-weight: bold;
+        color: black;
+      }
+      .ortex{
+        color:#eb870e!important;
+      }
+      .table-bordered tr td,th{
+        border:1px solid black!important;
+      }
+    </style>
+  </head>
+  <body style="background-color: #dddddd;">
+    <div class="fix-header">
+      <nav class="navbar">
+          <img class="float-left" src="assets/images/left_logo.png" style="width: 25%; background-size: cover;" />
+          <ul class="nav float-right d-none d-lg-flex">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link">Beranda</a>
+            </li>
+            <li class="nav-item active">
+              <a href="#!" class="nav-link">Profil Perusahaan</a>
+            </li>
+            <li class="nav-item">
+              <a href="proyek.html" class="nav-link">Referensi Proyek</a>
+            </li>
+            <li class="nav-item">
+              <a href="klien.html" class="nav-link">Klien</a>
+            </li>
+            <li class="nav-item">
+              <a href="mitra.html" class="nav-link">Mitra Bisnis</a>
+            </li>
+            <li class="nav-item">
+              <a href="kontak.html" class="nav-link">Hubungi Kami</a>
+            </li>
+          </ul>
+      </nav>
+    </div>
+    <div class="first-header">
+      <nav class="navbar justify-content-end primary-color">
+          <ul class="nav">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link">Beranda</a>
+            </li>
+            <li class="nav-item active">
+              <a href="#!" class="nav-link">Profil Perusahaan</a>
+            </li>
+            <li class="nav-item">
+              <a href="proyek.html" class="nav-link">Referensi Proyek</a>
+            </li>
+            <li class="nav-item">
+              <a href="klien.html" class="nav-link">Klien</a>
+            </li>
+            <li class="nav-item">
+              <a href="mitra.html" class="nav-link">Mitra Bisnis</a>
+            </li>
+            <li class="nav-item">
+              <a href="kontak.html" class="nav-link">Hubungi Kami</a>
+            </li>
+          </ul>
+      </nav>
+    </div>
+    <div class="container-fluid">
+      <div class="row banners" style="box-shadow: 1px 4px 10px #cccccc;">
+        <div class="col-lg-12 row">
+          <div class="col-lg-6">
+            <img class="left-header" src="assets/images/left_logo.png"/>
+          </div>
+          <div class="col-lg-6">
+            <img class="right-header float-right" src="assets/images/right_logo.png"/>
+          </div>
+        </div>
+      </div>
+      <div class="row" style="top: 20%; position: absolute; width: 100%; z-index: -1;">
+        <div class="col-lg-12">
+          <div class="container" style="padding-top: 3%;">
+            <div class="row">
+              <div class="col-lg-4">
+                <div class="list-group" id="list-tab" role="tablist">
+                    <a class="list-group-item list-group-action active" data-toggle="list" href="#aboutProfile">Tentang Kami</a>
+                    <a class="list-group-item list-group-action" data-toggle="list" href="#visiMisiProfile">Visi & Misi</a>
+                    <a class="list-group-item list-group-action" data-toggle="list" href="#nilaiProfile">Nilai-nilai</a>
+                    <a class="list-group-item list-group-action" data-toggle="list" href="#strukturProfile">Struktur Organisasi</a>
+                    <a class="list-group-item list-group-action" data-toggle="list" href="#pekerjaanProfile">Bidang Pekerjaan</a>
+                </div>
+              </div>
+              <div class="card col-lg-8">
+                <div class="tab-content" id="nav-tabContent">
+                  <div class="tab-pane fade show active" id="aboutProfile">
+                    <div class="card-body headKlien">
+                      <h6 class="header-primary" align="center">Tentang Kami</h6>
+                      <span class="liner-orange"></span>
+                    </div>
+                    <hr/>
+                    <div class="card-body" style="width: 100%; margin-top: -2.5%;">
+                      <p style="margin-top: 3%; text-align: justify; font-size: 14px;">
+                        <b>PT. BULAN DEMPEL KARYA</b> adalah perusahaan yang bergerak di bidang Kontraktor baik Bangunan Arsitektur maupun Civil Engineering, beralamat di Jl. Bulustalan III A nomor 415 B Semarang, Pendirian perusahaan ini berawal dari keinginan yang sangat kuat dalam ikut berperan serta dalam mensukseskan pembangunan Infrastruktur di Indonesia dimana keahlian kami dalam bidang konstruksi bangunan Gedung, Pelaksana Interior Gedung, Pengadaan dan Instalasi Mekanikal dan Elektrikal. Perusahaan ini berdiri secara legal tanggal 13 Juni 2016 sesuai Akte pendirian Perusahaan, Notaris HERLINDA RURI SAPUTRI, SH., M.Kn Nomor  01 dan telah melakukan Rapat Umum Pemegang Saham pada tanggal 03 Oktober 2016 sesuai Akta BA RUPS notaris HERLINDA RURI SAPUTRI, SH., M.Kn Nomor 01 tanggal 03 Oktober 2016.</p>
+                      <p style="text-align: justify; font-size: 14px;">
+                        <b>PT. BULAN DEMPEL KARYA</b> merupakan perusahan Menengah golongan M1 yang sudah memiliki legal Hukum untuk beroperasi di seluruh Indonesia berupa IJIN USAHA JASA KONSTRUKSI (IUJK) dari Pemerintah Kota Semarang nomor registrasi: 1-3374-2-01813-023484 dan SERTIFIKASI BADAN USAHA (SBU) dari LPJK Provinsi Jawa Tengah nomor Registrasi : 0-3374-06-016-1-11-009687 & 0-3374-07-016-1-11-009687. Secara Kualitas Integritas perusahaan sudah teraudit Laporan Keuangannya dan memiliki sertifikat Quality Management Systems : ISO 9001:2015, Environmental Management Systems : ISO 14001:2015 dan, Occuptional Helath and Safety Management Systems : BS OHSAS 18001 : 2007.
+                        Untuk mencapai tujuan perusahaan PT. BULAN DEMPEL KARYA didukung oleh Sumber Daya Manuasia yang profesional dengan kualifikasi Tenaga Ahli dalam Berbagai Bidang seperti : Tenaga Ahli Manajemen Proyek, Tenaga Ahli Manajemen Konstruksi, Tenaga Ahli Bangunan Gedung, Tenaga Ahli Arsitektur, Tenaga Ahli Desain Interior, Tenaga Ahli Mekanikal dan Elektrikal dan lain-lainnya, juga memiliki sumber daya Tenaga terampil  seperti : Pelaksana Bangunan Gedung, Juru gambar, Juru Ukur dan Berbagai macam tenaga Terampil yang lain - lannya dengan Total Sumber Daya yang di miliki sejumlah 30 orang.<br/>
+                        Team Manajemen PT. BULAN DEMPEL KARYA berkomitmen untuk melakukan yang terbaik dan mendedikasikan seluruh kemampuannya dalam melayani Client/Pengguna Jasa kami secara profesional dan selalu menjaga output hasil pekerjaan dengan berorientasi pada kualitas dan ketepatan waktu untuk melayani kebutuhan pengguna jasa secara Service Excelent.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="visiMisiProfile">
+                    <div class="card-body headKlien">
+                      <h6 class="header-primary" align="center">Visi & Misi</h6>
+                      <span class="liner-orange"></span>
+                    </div>
+                    <hr/>
+                    <div class="card-body" style="width: 100%; margin-top: -2.5%;">
+                      <p>
+                        <b>Misi :</b><br/>
+                        Terpercaya, Terdepan, Berintegritas dan Berkualitas dalam bidang Konstruksi
+                      </p>
+                      <p>
+                        <b>Visi :</b>
+                        <ol style="text-align: justify;"> 
+                        <li>Menjadi Perusahaan Konstruksi Terpercaya, berintegritas, terpandang, adil dalam berbisnis (fair dealing), berkualitas, mengutamakan keselamatan dan kesehatan kerja, Memberkahi bagi Semua karyawan dan pekerjanya.</li>
+                        <li>Perusahaan yang memiliki komitmen kuat untuk menghasilkan kualitas kerja yang maksimal serta memberikan kepuasan pelayanan yang terbaik.</li>
+                        <li>Perusahaan yang menjadikan seluruh karyawannya bangga bekerja di dalam Sistem Manajemen Perusahaannya dalam berkontribusi pada industri konstruksi yang tumbuh dan berkinerja terbaik, dan secara terus-menerus berusahan dan berupaya untuk mencapai kesejahteraan bersama.</li>
+                        </ol>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="nilaiProfile">
+                    <div class="card-body headKlien">
+                      <h6 class="header-primary" align="center">Nilai-nilai</h6>
+                      <span class="liner-orange"></span>
+                    </div>
+                    <hr/>
+                    <div class="card-body" style="width: 100%; margin-top: -2.5%;">
+                      <p>
+                        <b>Nilai - nilai :</b>
+                        <ol>
+                          <li>JUJUR : menjunjung tinggi kejujuran, tanggungjawab disiplin dan keterbukaan dalam upaya memenuhi komitmen, agar selalu mendapatkan kepercayaan konsumen sepanjang masa.</li>
+                          <li>KEKELUARGAAN : antara Komisaris,Direksi, karyawan, pekerja dan mitra strategis selalu menjalin hubungan yang penuh kekeluargaan saling sinergi, persatuan, saling asah, asih dan asuh untuk mencapai target dan tujuan perusahaan.</li>
+                          <li>KEPEKAAN : dalam mengantisipasi perubahan dinamika usaha, memngidentifikasi potensi dan mencegah timbulnya masalah, serta kreatif dan mampu menemukan solusi terbaik bagi perusahaan.</li>
+                          <li>KREATIF : berpegang pada profesionalisme, tahan uji dan kreativitas dalam upaya meningkatkan kualitas pelayanan melalui pengembangan teknologi dan metode konstruksi yang efisien dan efektif.</li>
+                        </ol>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="strukturProfile">
+                    <div class="card-body headKlien">
+                      <h6 style="font-size: 4vh;" class="header-primary" align="center">Struktur Organisasi Perusahaan<br><span>PT. BULAN DEMPEL KARYA SEMARANG</span></h6>
+                      <span class="liner-orange"></span>
+                    </div>
+                    <hr/>
+                    <div class="card-body" style="width: 100%; margin-top: -2.5%; height: 90vh; overflow-x: auto;">
+                      <img src="assets/images/struktur.png" style="width: 100%; background-size: cover;">
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="pekerjaanProfile">
+                    <div class="card-body headKlien">
+                      <h6 class="header-primary" align="center">Bidang Pekerjaan</h6>
+                      <span class="liner-orange"></span>
+                    </div>
+                    <hr/>
+                    <div class="card-body" style="width: 100%; margin-top: -2.5%; height: 90vh; overflow-x: auto;">
+                      <table class="table table-bordered">
+                        <thead>
+                          <tr>
+                            <th colspan="2">BIDANG PEKERJAAN</th>
+                            <th>KODE SUB KUALIFIKASI</th>
+                            <th>SUB KUALIFIKASI</th>
+                            <th>KUALIFIKASI</th>
+                          </tr>
+                        </thead>
+                        <thead>
+                          <tr>
+                            <td colspan="5" style="background-color: #eeeeee;"><b>a. BANGUNAN GEDUNG</b></td>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>1.</td>
+                            <td>JASA PELAKSANA UNTUK KONSTRUKSI BANGUNAN HUNIAN TUNGGAL DAN KOPPEL</td>
+                            <td class="ortex" style="background-color: #eeeeee;" align="center"><b>BG001</b></td>
+                            <td align="center">M 1</td>
+                            <td class="ortex" rowspan="5" align="center" style="background-color: #eeeeee;"><div style="transform: rotate(-90deg); margin-top: 100%;"><b>USAHA NON KECIL</b></div></td>
+                          </tr>
+                          <tr>
+                            <td>2.</td>
+                            <td>JASA PELAKSANA UNTUK KONSTRUKSI BANGUNAN KOMERSIAL)</td>
+                            <td class="ortex" style="background-color: #eeeeee;" align="center"><b>BG004</b></td>
+                            <td align="center">M 1</td>
+                          </tr>
+                          <tr>
+                            <td>3.</td>
+                            <td>JASA PELAKSANA UNTUK KONSTRUKSI BANGUNAN PENDIDIKAN</td>
+                            <td class="ortex" style="background-color: #eeeeee;" align="center"><b>BG007</b></td>
+                            <td align="center">M 1</td>
+                          </tr>
+                          <tr>
+                            <td>4.</td>
+                            <td>JASA PELAKSANA UNTUK KONSTRUKSI BANGUNAN KESEHATAN</td>
+                            <td class="ortex" style="background-color: #eeeeee;" align="center"><b>BG008</b></td>
+                            <td align="center">M 1</td>
+                          </tr>
+                          <tr>
+                            <td>5.</td>
+                            <td>JASA PELAKSANA UNTUK KONSTRUKSI BANGUNAN GEDUNG LAINNYA</td>
+                            <td class="ortex" style="background-color: #eeeeee;" align="center"><b>BG009</b></td>
+                            <td align="center">M 1</td>
+                          </tr>
+                        </tbody>
+                        <thead>
+                          <tr>
+                            <td colspan="5" style="background-color: #eeeeee;"><b>a. BANGUNAN GEDUNG</b></td>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>1.</td>
+                            <td>JASA PELAKSANA UNTUK KONSTRUKSI SALURAN AIR, PELABUHAN, DAM, DAN PRASARANA SUMBER DAYA AIR LAINNYA</td>
+                            <td class="ortex" align="center" style="background-color: #eeeeee;"><b>SI001</b></td>
+                            <td align="center">M 1</td>
+                            <td class="ortex" style="background-color: #eeeeee;" rowspan="5" align="center"><div style="transform: rotate(-90deg); margin-top: 100%;"><b>USAHA NON KECIL</b></div></td>
+                          </tr>
+                          <tr>
+                            <td>2.</td>
+                            <td>JASA PELAKSANA KONSTRUKSI INSTALASI PENGOLAHAN AIR MINUM DAN AIR LIMBAH SERTA BANGUNAN PENGOLAHAN SAMPAH</td>
+                            <td class="ortex" align="center" style="background-color: #eeeeee;"><b>SI002</b></td>
+                            <td align="center">M 1</td>
+                          </tr>
+                          <tr>
+                            <td>3.</td>
+                            <td>JASA PELAKSANA UNTUK KONSTRUKSI JALAN RAYA (KEC. JALAN LAYANG), JALAN, REL KERETA API, DAN LANDAS PACU BANDARA</td>
+                            <td class="ortex" align="center" style="background-color: #eeeeee;"><b>SI003</b></td>
+                            <td align="center">M 1</td>
+                          </tr>
+                          <tr>
+                            <td>4.</td>
+                            <td>JASA PELAKSANA KONSTRUKSI PEK. JEMBATAN, JALAN LAYANG, TEROWONGAN DAN SUBWAYS</td>
+                            <td class="ortex" align="center" style="background-color: #eeeeee;"><b>SI004</b></td>
+                            <td align="center">M 1</td>
+                          </tr>
+                          <tr>
+                            <td>5.</td>
+                            <td>JASA PELAKSANA KONSTRUKSI BANGUNAN FASILITAS OLAH RAGA INDOOR DAN FASILITAS REKREASI</td>
+                            <td class="ortex" align="center" style="background-color: #eeeeee;"><b>SI012</b></td>
+                            <td align="center">M 1</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer style="bottom:-90%; width: 100%; background-color: #262626; position: absolute;" class="footer-distributed">            
+        <div class="footer-left">                 
+          <h3>Bulan Dempel<span>Karya</span></h3>                 
+            <p class="footer-links">·                     
+              <a href="#">Arsitektur</a> ·&nbsp;                     
+              <a href="#">Civil</a> ·&nbsp;                     
+              <a href="#">Enginering</a>                 
+            </p>                 
+        </div>             
+        <div class="footer-center">                 
+          <div>                     
+            <i class="fa fa-map-marker"></i>                     
+            <p><span>Jl. Bulustalan III A nomor 415 B</span> Semarang, Indonesia</p>                 
+          </div>                 
+          <div>                    
+            <i class="fa fa-phone"></i>                     
+            <p>024-86400172</p>                 
+          </div>                 
+          <div>                     
+            <i class="fa fa-envelope"></i>                     
+            <p><a href="mailto:support@company.com">bulandempelkarya16@gmail.com</a></p>                 
+          </div>             
+        </div>            
+        <div class="footer-right">                 
+          <p class="footer-company-about">                     
+          <span>Tentang Perusahaan</span>                     
+          perusahaan yang bergerak di bidang Kontraktor baik Bangunan Arsitektur maupun Civil Engineering                 
+          </p>                 
+          <div class="footer-icons">                     
+            <a href="#"><i class="fa fa-facebook"></i></a>                     
+            <a href="#"><i class="fa fa-twitter"></i></a>                    
+            <a href="#"><i class="fa fa-linkedin"></i></a>                   
+            <a href="#"><i class="fa fa-github"></i></a>              
+          </div>             
+        </div><br/>
+        <div class="row">
+          <div class="col-lg-12">
+            <p class="footer-company-name">Company Name &copy; 2019</p>
+          </div>
+        </div>      
+      </footer>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(window).scroll(function(){
+        if($(window).scrollTop()>100){
+          $('.fix-header').fadeIn();
+          // $('.fix-header').animate({'top':'0'},'200');
+        }else{
+          // $('.fix-header').animate({'top':'-101%'},'200');
+          $('.fix-header').fadeOut();
+        }
+      });
+    </script>
+  </body>
+  
+</html>
